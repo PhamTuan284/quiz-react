@@ -1,0 +1,177 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 10px;
+  height: 100vh;
+}
+.startButton {
+  background-color: #34d49d;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 4px 0 0 #00a06a;
+  padding: 10px 30px;
+  font-weight: 700;
+}
+.startButton:hover {
+  background-color: #00bb79;
+}
+
+.topBar {
+  background-color: black;
+  padding: 10px 0;
+  color: white;
+}
+
+.question {
+  height: 300px;
+  color: white;
+}
+.answer {
+  cursor: pointer;
+  height: 180px;
+  color: white;
+  font-size: 20px;
+}
+.answer p {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.qa {
+  background-color: hsl(307, 37%, 18%);
+  padding: 30px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.questionsCount {
+  background-color: rgba(102, 102, 102, 0.336);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+.timer {
+  background-color: rgba(102, 102, 102, 0.336);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  width: 110px;
+}
+
+.streak .btn {
+  border-radius: 10px;
+  padding: 0 10px;
+  width: 100px;
+  cursor: default;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  color: white;
+}
+
+.streakLeft {
+  text-align: left;
+}
+.streakRight {
+  text-align: right;
+}
+.streakActive {
+  background-color: white;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+.result {
+  color: white;
+}
+
+.startOver {
+  margin: auto;
+  box-shadow: 0 3px 0 0 rgb(0 0 0 / 20%), 0 3px 0 0 #8854c0;
+  cursor: pointer;
+  background-color: #8854c0;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 18px;
+  width: 300px;
+}
+
+.optionA {
+  background-color: rgb(47, 109, 174);
+  box-shadow: rgb(33, 78, 124) 0px 6px 0px 0px;
+}
+.optionA:hover {
+  background-color: #347ac2;
+}
+
+.optionB {
+  background-color: rgb(44, 156, 166);
+  box-shadow: rgb(31, 109, 116) 0px 6px 0px 0px;
+}
+.optionB:hover {
+  background-color: #31afba;
+}
+
+.optionC {
+  background-color: rgb(236, 168, 44);
+  box-shadow: rgb(198, 134, 18) 0px 6px 0px 0px;
+}
+.optionC:hover {
+  background-color: #eeb243;
+}
+
+.optionD {
+  background-color: rgb(212, 84, 106);
+  box-shadow: rgb(186, 47, 71) 0px 6px 0px 0px;
+}
+.optionD:hover {
+  background-color: #d9687c;
+}
+.green {
+  background-color: #00bb79;
+  box-shadow: 0 4px 0 0 #00a06a;
+}
+.green:hover {
+  background-color: #00bb79;
+  box-shadow: 0 4px 0 0 #00a06a;
+}
+.red {
+  background-color: rgb(212, 84, 106);
+  box-shadow: rgb(186, 47, 71) 0px 6px 0px 0px;
+}
+.red:hover {
+  background-color: rgb(212, 84, 106);
+  box-shadow: rgb(186, 47, 71) 0px 6px 0px 0px;
+}
+
+.score{
+  background-color: rgba(102, 102, 102, 0.336);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  width: 130px;
+  margin-left: 20px;
+}
+
+@media (max-width: 770px){
+  .question {
+    height: 150px;
+    font-size: 20px;
+  }
+  .answer {
+    font-size: 17px;
+    height: 60px;
+  }
+  .streak .btn {
+    width: 80px;
+  }
+}
